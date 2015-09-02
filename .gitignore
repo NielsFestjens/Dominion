@@ -1,0 +1,11 @@
+node_modules/
+bin/
+obj/
+*.csproj.user
+*.v12.suo
+*.js
+*.js.map
+
+server/build/
+*.suo
+*.dat

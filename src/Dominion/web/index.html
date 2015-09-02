@@ -1,0 +1,23 @@
+<html>
+	<head></head>
+	<body>
+		<div>howdy</div>
+        <div id="log"></div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+            function onMessage(msg) {
+                $('#log').append('<p>' + msg + '</p>');
+            }
+
+            var socket = new WebSocket('ws://localhost:3000');
+            socket.onopen = function () {
+                socket.send(JSON.stringify({ name: 'Bob', message: 'Hello' }));
+            }
+
+            socket.onmessage = function (message) {
+                onMessage('Connection 1: ' + message.data);
+            };
+
+        </script>
+	</body>
+</html>
