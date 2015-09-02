@@ -1,7 +1,7 @@
 {
-  "name": "TestNodeWeb",
+  "name": "Dominion",
   "version": "0.0.0",
-  "description": "TestNodeWeb",
+  "description": "Dominion",
   "main": "web/script/server/server.js",
   "dependencies": {
     "ws": "^0.8.0"
@@ -12,7 +12,10 @@
     "typescript": "^1.5.3"
   },
   "author": {
-    "name": "festj_000",
-    "email": ""
+    "name": "Niels Festjens",
+    "email": "festjens_niels@hotmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/NielsFestjens/Dominion.git"
   }
 }
