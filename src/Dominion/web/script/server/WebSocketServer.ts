@@ -7,7 +7,7 @@ import ws = require('ws');
 export class WebSocketServer {
     server: ws.Server;
 
-    run(callback: (message: any) => void, port: number = 3000) {
+    run(callback: (message: any) => void, port: number) {
         this.server = new ws.Server({ port: port });
         console.log("WebSocketServer @ http://localhost:" + port + "/");
         this.server.on('connection', client => {

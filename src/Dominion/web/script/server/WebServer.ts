@@ -5,7 +5,7 @@ import url = require("url");
 import path = require("path");
 import fs = require("fs");
 
-export function run(port: number = 8888) {
+export function run(port: number) {
 
     http.createServer((request, response) => {
 
